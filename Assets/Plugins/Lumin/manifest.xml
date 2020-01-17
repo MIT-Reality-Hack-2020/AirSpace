@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:ml="magicleap" ml:package="com.test.test" ml:version_code="1" ml:version_name="1.0.0">
+  <application ml:sdk_version="1.0" ml:visible_name="Magic Leap Unity Template LWRP" ml:min_api_level="6">
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="Magic Leap Unity Template LWRP">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+    <uses-privilege ml:name="LowLatencyLightwear" />
+    <uses-privilege ml:name="BackgroundDownload" />
+    <uses-privilege ml:name="BackgroundUpload" />
+    <uses-privilege ml:name="BatteryInfo" />
+    <uses-privilege ml:name="ConnectBackgroundMusicService" />
+    <uses-privilege ml:name="ControllerPose" />
+    <uses-privilege ml:name="DrmCertificates" />
+    <uses-privilege ml:name="GesturesConfig" />
+    <uses-privilege ml:name="GesturesSubscribe" />
+    <uses-privilege ml:name="HandMesh" />
+    <uses-privilege ml:name="IdentityRead" />
+    <uses-privilege ml:name="InAppPurchase" />
+    <uses-privilege ml:name="Internet" />
+    <uses-privilege ml:name="MusicService" />
+    <uses-privilege ml:name="NormalNotificationsUsage" />
+    <uses-privilege ml:name="PcfRead" />
+    <uses-privilege ml:name="PowerInfo" />
+    <uses-privilege ml:name="RegisterBackgroundMusicService" />
+    <uses-privilege ml:name="ScreensProvider" />
+    <uses-privilege ml:name="SecureBrowserWindow" />
+    <uses-privilege ml:name="WifiStatusRead" />
+    <uses-privilege ml:name="WorldReconstruction" />
+    <uses-privilege ml:name="AddressBookRead" />
+    <uses-privilege ml:name="AddressBookWrite" />
+    <uses-privilege ml:name="LocalAreaNetwork" />
+    <uses-privilege ml:name="AudioCaptureMic" />
+    <uses-privilege ml:name="AudioRecognizer" />
+    <uses-privilege ml:name="CameraCapture" />
+    <uses-privilege ml:name="CoarseLocation" />
+    <uses-privilege ml:name="ComputerVision" />
+    <uses-privilege ml:name="VoiceInput" />
+  </application>
+</manifest>
