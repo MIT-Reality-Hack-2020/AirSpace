@@ -8,9 +8,21 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/EmptyScene.unity
     guid: 102ec66d67b1d4913a8a47657c1e8982
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HelloCube.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/PlaneExtractionTest.unity
+    guid: 3308e8acae5c35a4a8b53551b237985a
+  - enabled: 0
+    path: Assets/MagicLeap/Examples/Scenes/Planes.unity
+    guid: 5fca2d94f0384ff42b981955c16012ef
+  - enabled: 0
+    path: Assets/MagicLeap/Examples/Scenes/Raycast.unity
+    guid: 6c94c849b074e2c4883092293f337b1f
+  - enabled: 1
+    path: Assets/Scenes/AirportTest.unity
+    guid: e6580453be83c1043808cbd6921fb43d
   m_configObjects:
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: ed2d25b3a4058ce48a29b3d0e751a83b,
       type: 2}

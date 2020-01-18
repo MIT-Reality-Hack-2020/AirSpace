@@ -121,9 +121,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: v0.23.0.1
-  preloadedAssets:
-  - {fileID: -6602195166426926598, guid: 2ba4dbd235ed941bb8fdb5a40ab00f22, type: 2}
-  - {fileID: 11400000, guid: ed2d25b3a4058ce48a29b3d0e751a83b, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -166,7 +164,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Lumin: com.test.test
+    Lumin: org.hackeralliance.aratc
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
