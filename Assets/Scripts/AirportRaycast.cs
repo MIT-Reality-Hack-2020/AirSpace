@@ -56,7 +56,7 @@ namespace MagicLeap
 
         private bool _triggerPressed = false;
 
-        private GameObject placeObject;
+        private GameObject placeObject = null;
 
         #endregion
 
@@ -204,7 +204,11 @@ namespace MagicLeap
         {
             Debug.Log("Trigger Pull");
             // _raycastController.Controller.gameObject;
-
+            if (placeObject != null)
+            {
+                Destroy(placeObject);
+                placeObject = null;
+            }
             placeObject = Instantiate(_airportMarker, _raycastController.gameObject.transform.position, new Quaternion());
         }
 
