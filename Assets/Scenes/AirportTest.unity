@@ -205,6 +205,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1044815950}
+  - {fileID: 932591580}
   - {fileID: 370682733}
   - {fileID: 610154792}
   - {fileID: 559460751}
@@ -249,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4724017855786006, guid: 6884f69ad0adbb441905ff499f5d1ece, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114199533994420944, guid: 6884f69ad0adbb441905ff499f5d1ece,
         type: 3}
@@ -383,7 +384,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 234904009}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &370682734
 GameObject:
@@ -437,7 +438,7 @@ MonoBehaviour:
   OnRaycastResult:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1044815951}
+      - m_Target: {fileID: 0}
         m_MethodName: OnRaycastHit
         m_Mode: 0
         m_Arguments:
@@ -525,7 +526,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 234904009}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559460752
 GameObject:
@@ -579,7 +580,7 @@ MonoBehaviour:
   OnRaycastResult:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1044815951}
+      - m_Target: {fileID: 0}
         m_MethodName: OnRaycastHit
         m_Mode: 0
         m_Arguments:
@@ -666,7 +667,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 234904009}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &610154793
 GameObject:
@@ -720,7 +721,7 @@ MonoBehaviour:
   OnRaycastResult:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1044815951}
+      - m_Target: {fileID: 0}
         m_MethodName: OnRaycastHit
         m_Mode: 0
         m_Arguments:
@@ -794,6 +795,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610154793}
   m_Mesh: {fileID: 4300000, guid: 469d0d5dd3558804ca56a8d0fa774dae, type: 3}
+--- !u!1 &932591579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7835174176718715343, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+    type: 3}
+  m_PrefabInstance: {fileID: 7835174175889673748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &932591580 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+    type: 3}
+  m_PrefabInstance: {fileID: 7835174175889673748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1044815949
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +818,7 @@ GameObject:
   - component: {fileID: 1044815950}
   - component: {fileID: 1044815951}
   m_Layer: 0
-  m_Name: RaycastExample
+  m_Name: AirportRaycast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -834,7 +847,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044815949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66f27462e182a2743ac2168d5e03baf5, type: 3}
+  m_Script: {fileID: 11500000, guid: 30e5a9a5e848f1d46bdc97bae3b95ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _statusLabel: {fileID: 1447619920}
@@ -842,6 +855,7 @@ MonoBehaviour:
   _raycastHead: {fileID: 610154795}
   _raycastEyes: {fileID: 559460754}
   _controllerConnectionHandler: {fileID: 247585909}
+  _airportMarker: {fileID: 932591579}
 --- !u!1 &1447619918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,3 +1311,82 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 0.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &7835174175889673748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 234904009}
+    m_Modifications:
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715336, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715339, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 346cbcb2d8fa248348daef42412c2b2a, type: 2}
+    - target: {fileID: 7835174176718715343, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_Name
+      value: AirportMarker
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835174176718715380, guid: cd17dbdaf0cf4934bac22c02be1d4499,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 5b285b3c693725c4995ec9b2a3eb1496, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd17dbdaf0cf4934bac22c02be1d4499, type: 3}
