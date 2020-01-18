@@ -203,13 +203,10 @@ namespace MagicLeap
         private void onTriggerPull()
         {
             Debug.Log("Trigger Pull");
-            // _raycastController.Controller.gameObject;
-            if (placeObject != null)
-            {
-                Destroy(placeObject);
-                placeObject = null;
-            }
-            placeObject = Instantiate(_airportMarker, _raycastController.gameObject.transform.position, new Quaternion());
+
+            Vector3 newPos = _raycastController.gameObject.transform.position;
+
+            _airportMarker.transform.position = newPos;
         }
 
         /// <summary>

@@ -113,7 +113,7 @@ namespace MagicLeap
                 transform.localScale = Vector3.one;
 
                 // Set the color to yellow if the hit is unobserved.
-                _render.material.color = (state == MLWorldRays.MLWorldRaycastResultState.HitObserved)? _color : Color.yellow;
+                _render.material.color = (state == MLWorldRays.MLWorldRaycastResultState.HitObserved) ? _color : Color.yellow;
 
                 if (_scaleWhenClose)
                 {
