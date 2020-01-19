@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Runways
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
+  m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -65,14 +65,14 @@ Material:
     - _Glossiness: 0.149
     - _GlossyReflections: 1
     - _Metallic: 0.918
-    - _Mode: 3
+    - _Mode: 2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 5
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 1, g: 0.25943398, b: 0.6564644, a: 1}
-    - _EmissionColor: {r: 0.5754717, g: 0.05700427, b: 0.070946746, a: 1}
+    - _Color: {r: 0.9266544, g: 0.9339623, b: 0.72690463, a: 1}
+    - _EmissionColor: {r: 0.99607843, g: 1.1529412, b: 0.1254902, a: 1}
