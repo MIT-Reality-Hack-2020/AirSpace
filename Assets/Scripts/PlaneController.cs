@@ -35,6 +35,7 @@ public class PlaneController : MonoBehaviour
             if (Vector3.Distance(this.transform.position, targetWaypoint.transform.position) < 0.01f)
             {
                 targetWaypoint = targetWaypoint.nextWayPoint;
+                this.transform.LookAt(targetWaypoint.transform.position);
             }
         }
     }
