@@ -185,7 +185,7 @@ namespace MagicLeap
 
         private void UpdateTrigger()
         {
-            if (_controllerConnectionHandler.ConnectedController.TriggerValue > 0.2f)
+            if (_controllerConnectionHandler.ConnectedController != null && _controllerConnectionHandler.ConnectedController.TriggerValue > 0.2f)
             {
                 if (!_triggerPressed)
                 {

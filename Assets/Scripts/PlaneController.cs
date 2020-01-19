@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class PlaneController : MonoBehaviour
 {
     public Route assignedRoute;
@@ -14,6 +14,9 @@ public class PlaneController : MonoBehaviour
     public int altitude = 1000;
     public Waypoint targetWaypoint;
 
+    public string airlineCode = "NUL";
+    public int flightNumber = 000;
+    public GameObject label;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,5 +41,8 @@ public class PlaneController : MonoBehaviour
                 this.transform.LookAt(targetWaypoint.transform.position);
             }
         }
+        label.transform.LookAt(Camera.main.transform);
+        label.transform.Rotate(Vector3.up - new Vector3(0, 180, 0));
+        label.GetComponent<TextMeshPro>().text = airlineCode + " " + flightNumber;
     }
 }
