@@ -1,8 +1,12 @@
 # AirSpace
 
+AirSpace is an augmented reality system for air traffic controllers that aims to modernize the aviation industry and improve both flight safety and efficiency.
+
 ## Project
 
-Augmented reality for air traffic control to visaulize air traffic in 3D world space instead of on flat 2D radar displays.
+AirSpace works by taking flight data that’s typically shown on flat 2D radar displays and overlaying that information in the real world, so controllers can see that information in 3D space.  This is important because on a flat map it is very difficult to visualize how far apart two planes actually are from each other, due to their altitude adding a 3rd dimension. Two planes overlapping might be right on top of each other about to crash, or 100 nautical miles away from each other.
+
+https://devpost.com/software/airspace
 
 ## Team
 
